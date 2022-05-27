@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://www.cnidofest.org/feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.cnidofest.org/" rel="alternate" type="text/html" /><updated>2022-05-27T13:24:12-04:00</updated><id>http://www.cnidofest.org/feed.xml</id><title type="html">Cnidofest</title><subtitle>The Cnidarian Model Systems Meeting</subtitle><entry><title type="html">Custom Domain</title><link href="http://www.cnidofest.org/2022/01/19/custom-domain.html" rel="alternate" type="text/html" title="Custom Domain" /><published>2022-01-19T00:00:00-05:00</published><updated>2022-01-19T00:00:00-05:00</updated><id>http://www.cnidofest.org/2022/01/19/custom-domain</id><content type="html" xml:base="http://www.cnidofest.org/2022/01/19/custom-domain.html">&lt;ol&gt;
+  &lt;li&gt;Followed instructions here: &lt;a href=&quot;https://deanattali.com/blog/multiple-github-pages-domains/&quot;&gt;https://deanattali.com/blog/multiple-github-pages-domains/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Matt Nicotra</name></author><summary type="html">Followed instructions here: https://deanattali.com/blog/multiple-github-pages-domains/</summary></entry><entry><title type="html">Creating a scaffold for the site</title><link href="http://www.cnidofest.org/2021/12/29/creating-site-scaffold.html" rel="alternate" type="text/html" title="Creating a scaffold for the site" /><published>2021-12-29T00:00:00-05:00</published><updated>2021-12-29T00:00:00-05:00</updated><id>http://www.cnidofest.org/2021/12/29/creating-site-scaffold</id><content type="html" xml:base="http://www.cnidofest.org/2021/12/29/creating-site-scaffold.html">&lt;h3 id=&quot;make-pages&quot;&gt;Make pages&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;About
+    &lt;ul&gt;
+      &lt;li&gt;Change header&lt;/li&gt;
+      &lt;li&gt;Delete boiler text.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Home
+    &lt;ul&gt;
+      &lt;li&gt;Change to “page” layout&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Past Meetings
+    &lt;ul&gt;
+      &lt;li&gt;create page past meetings&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Zoom Seminars
+    &lt;ul&gt;
+      &lt;li&gt;create page Zoom seminars&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;add-pages-to-menu&quot;&gt;add pages to menu&lt;/h3&gt;
+
+&lt;p&gt;In _config.yml, add the menu info&lt;/p&gt;
+
+&lt;h3 id=&quot;add-permalinks&quot;&gt;add permalinks&lt;/h3&gt;
+&lt;p&gt;(because this makes the breadcrumbs make sense)&lt;/p&gt;
+
+&lt;h3 id=&quot;add-content&quot;&gt;add content&lt;/h3&gt;
+
+&lt;h4 id=&quot;past-meetings&quot;&gt;Past meetings&lt;/h4&gt;</content><author><name>Matt Nicotra</name></author><summary type="html">Make pages</summary></entry><entry><title type="html">Initial Setup</title><link href="http://www.cnidofest.org/2021/12/28/initial-setup.html" rel="alternate" type="text/html" title="Initial Setup" /><published>2021-12-28T15:40:21-05:00</published><updated>2021-12-28T15:40:21-05:00</updated><id>http://www.cnidofest.org/2021/12/28/initial-setup</id><content type="html" xml:base="http://www.cnidofest.org/2021/12/28/initial-setup.html">&lt;p&gt;We want to transition our website from a WYSIWYG hosting service to &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; because it will be cheaper (free). We also hope that it will enable us to share web maintenance duties more easily.&lt;/p&gt;
+
+&lt;p&gt;To set up the site I first learned about GitHub pages and Jekyll from &lt;a href=&quot;https://www.youtube.com/watch?v=EvYs1idcGnM&amp;amp;list=PLWzwUIYZpnJuT0sH4BN56P5oWTdHJiTNq&quot;&gt;this excellent set of youtube videos by Bill Raymond&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then I created the initial site.&lt;/p&gt;
+
+&lt;h3 id=&quot;set-up-repo-on-github&quot;&gt;Set up repo on GitHub&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Created a repo called “&lt;a href=&quot;https://github.com/matthewnicotra/cnidofest-website&quot;&gt;cnidofest-website&lt;/a&gt;” in my GitHub account. The repo is empty, but that is okay because it will be filled with files from Jekyll soon.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Created a README.md file for the repo. Note: this establishes the “main” branch of the repo, which is what I will select in the next step.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enabled the repo as be a GitHub Pages website by going to Settings &amp;gt; Pages, then selecting “main” from the dropdown under &lt;strong&gt;source&lt;/strong&gt;. I kept the folder at “/root”, then clicked “save”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I also edited the “About” box (circled at top of screenshot below) to include the path to the site for ease of access later on.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/cnidofest-website/assets/images/repo-after-first-build.png&quot; alt=&quot;Screenshot of the repo page &quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;After a few minutes, an “Environment” appeared at the bottom of the &lt;strong&gt;&amp;lt;code&amp;gt;&lt;/strong&gt; tab for the repo, which meant that GitHub had build the page (using Jekyll). Right now, Jekyll just uses the README.md in place of an index.html page, so the site is pretty bland:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/cnidofest-website/assets/images/site-from-readme.png&quot; alt=&quot;Screenshot of the site&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;clone-repo-and-set-up-site-with-jekyll&quot;&gt;Clone repo and set up site with Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Now, I am going to clone the repo and use Jekyll to create the site. This will let me develop the site on my local computer before pushing it back to GitHub, where Jekyll will build the site for GitHub pages.&lt;/p&gt;
+
+&lt;p&gt;I have already installed Jekyll on my computer.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;On my laptop, I created a folder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sites&lt;/code&gt;. I then moved into that folder and cloned the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cnidofest-website&lt;/code&gt; directory.&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Sites
+ git clone https://github.com/matthewnicotra/cnidofest-website.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I then changed into this directory and used Jekyll to create a new site. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll new&lt;/code&gt; creates the new site, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt; tells Jekyll to create the site in this directory, and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--force&lt;/code&gt; is used because Jekyll will balk at created a new site if there are files in the existing directory.&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll new &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;This step was only required for me because, for some reason, I need to manually add webrick to jekyll.&lt;/em&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle add webrick
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now I can test the site by running the command below and heading to http://127.0.0.1:4000/&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; there are a few things to update. Under site headings, changed the site info from the defaults:&lt;/p&gt;
+
+    &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Cnidofest&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;cnidofest@gmail.com&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;-&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this means to ignore newlines until &quot;baseurl:&quot;&lt;/span&gt;
+     &lt;span class=&quot;s&quot;&gt;The Cnidarian Model Systems Meeting &lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/cnidofest-website&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the subpath of your site, e.g. /blog&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;http://matthewnicotra.github.io&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the base hostname &amp;amp; protocol for your site, e.g. http://example.com&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;twitter_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;cnidofest&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;matthewnicotra&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To make these changes take effect, we have to kill and restart Jekyll.&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ^C
+ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;set-up-the-theme&quot;&gt;Set up the theme&lt;/h3&gt;
+
+&lt;p&gt;The default theme for Jekyll sites is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minima&lt;/code&gt;. But for this site, I am going to use the theme &lt;a href=&quot;https://www.hydejack.com&quot;&gt;Hydejack&lt;/a&gt;. I want to use a static version of the hydejack theme (so that I can control when the theme updates, rather than having the theme change without me knowing). Therefore, I did the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fork the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hydecorp/hydejack&lt;/code&gt; repo, which I renamed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;matthewnicotra/hydejack-matthewnicotra&lt;/code&gt; (to make clear I am using the local version)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file as follows. The plugin &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-include-cache&lt;/code&gt; is required by the Hydejack theme.&lt;/p&gt;
+
+    &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;# Build settings&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;remote_theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;matthewnicotra/hydejack-matthewnicotra&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+ &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-feed&lt;/span&gt;
+ &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-include-cache&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; so it looks like this:&lt;/p&gt;
+
+    &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://rubygems.org&quot;&lt;/span&gt;
+
+ &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;github-pages&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;group: :jekyll_plugins&lt;/span&gt;
+
+ &lt;span class=&quot;c1&quot;&gt;# If you have any plugins, put them here!&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:jekyll_plugins&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;jekyll-feed&quot;&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;jekyll-include-cache&quot;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+ &lt;span class=&quot;c1&quot;&gt;# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;# and associated library.&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;platforms&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:mingw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:x64_mingw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:mswin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:jruby&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tzinfo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~&amp;gt; 1.2&quot;&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tzinfo-data&quot;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+ &lt;span class=&quot;c1&quot;&gt;# Performance-booster for watching directories on Windows&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;wdm&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~&amp;gt; 0.1.1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:platforms&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:mingw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:x64_mingw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:mswin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+
+ &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;webrick&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~&amp;gt; 1.7&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Delete the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; file. This is necessary because this file freezes all gems at versions that are incompatible.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update bundler, which creates a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now start the local server&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Matt Nicotra</name></author><summary type="html">We want to transition our website from a WYSIWYG hosting service to GitHub Pages because it will be cheaper (free). We also hope that it will enable us to share web maintenance duties more easily. To set up the site I first learned about GitHub pages and Jekyll from this excellent set of youtube videos by Bill Raymond. Then I created the initial site. Set up repo on GitHub Created a repo called “cnidofest-website” in my GitHub account. The repo is empty, but that is okay because it will be filled with files from Jekyll soon. Created a README.md file for the repo. Note: this establishes the “main” branch of the repo, which is what I will select in the next step. Enabled the repo as be a GitHub Pages website by going to Settings &amp;gt; Pages, then selecting “main” from the dropdown under source. I kept the folder at “/root”, then clicked “save”. I also edited the “About” box (circled at top of screenshot below) to include the path to the site for ease of access later on. After a few minutes, an “Environment” appeared at the bottom of the &amp;lt;code&amp;gt; tab for the repo, which meant that GitHub had build the page (using Jekyll). Right now, Jekyll just uses the README.md in place of an index.html page, so the site is pretty bland: Clone repo and set up site with Jekyll Now, I am going to clone the repo and use Jekyll to create the site. This will let me develop the site on my local computer before pushing it back to GitHub, where Jekyll will build the site for GitHub pages. I have already installed Jekyll on my computer. On my laptop, I created a folder called Sites. I then moved into that folder and cloned the cnidofest-website directory. cd Sites git clone https://github.com/matthewnicotra/cnidofest-website.git I then changed into this directory and used Jekyll to create a new site. The bundle exec jekyll new creates the new site, the . tells Jekyll to create the site in this directory, and the --force is used because Jekyll will balk at created a new site if there are files in the existing directory. bundle exec jekyll new . --force This step was only required for me because, for some reason, I need to manually add webrick to jekyll. bundle add webrick Now I can test the site by running the command below and heading to http://127.0.0.1:4000/ bundle exec jekyll serve In _config.yml there are a few things to update. Under site headings, changed the site info from the defaults: title: Cnidofest email: cnidofest@gmail.com description: &amp;gt;- # this means to ignore newlines until &quot;baseurl:&quot; The Cnidarian Model Systems Meeting baseurl: &quot;/cnidofest-website&quot; # the subpath of your site, e.g. /blog url: &quot;http://matthewnicotra.github.io&quot; # the base hostname &amp;amp; protocol for your site, e.g. http://example.com twitter_username: cnidofest github_username: matthewnicotra To make these changes take effect, we have to kill and restart Jekyll. ^C bundle exec jekyll serve Set up the theme The default theme for Jekyll sites is minima. But for this site, I am going to use the theme Hydejack. I want to use a static version of the hydejack theme (so that I can control when the theme updates, rather than having the theme change without me knowing). Therefore, I did the following: Fork the hydecorp/hydejack repo, which I renamed matthewnicotra/hydejack-matthewnicotra (to make clear I am using the local version) Edit the _config.yml file as follows. The plugin jekyll-include-cache is required by the Hydejack theme. # Build settings remote_theme: matthewnicotra/hydejack-matthewnicotra plugins: - jekyll-feed - jekyll-include-cache Edit the Gemfile so it looks like this: source &quot;https://rubygems.org&quot; gem &quot;github-pages&quot;, group: :jekyll_plugins # If you have any plugins, put them here! group :jekyll_plugins do gem &quot;jekyll-feed&quot; gem &quot;jekyll-include-cache&quot; end # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem # and associated library. platforms :mingw, :x64_mingw, :mswin, :jruby do gem &quot;tzinfo&quot;, &quot;~&amp;gt; 1.2&quot; gem &quot;tzinfo-data&quot; end # Performance-booster for watching directories on Windows gem &quot;wdm&quot;, &quot;~&amp;gt; 0.1.1&quot;, :platforms =&amp;gt; [:mingw, :x64_mingw, :mswin] gem &quot;webrick&quot;, &quot;~&amp;gt; 1.7&quot; Delete the Gemfile.lock file. This is necessary because this file freezes all gems at versions that are incompatible. Update bundler, which creates a new Gemfile.lock. bundle update Now start the local server bundle exec jekyll serve</summary></entry></feed>
